@@ -1,0 +1,13 @@
+•What is a gitignore file and what should it include for a Java project?
+•What does fast-forward in Git mean?
+•Why should you have different branches?
+•In a project how many remote Git repositories do you usually have?
+
+Answers
+• We should gitignore some file types so that some temporary files or some system specific files for example, OS files, Application files, Package Managers, Language files, etc (like - .project, .class, .settings) are not uploaded to git as these files are not used by anyone in the team. For example, for a java project, it should include the log file paths(*.log), .project files, compiled class files(*.class), all package jar files like *.jar, *.war, *.ear files etc.
+
+• When we try to merge one commit with a commit that can be reached by following the first commit’s history, Git simplifies things by moving the pointer forward because there is no divergent work to merge together – this is called a “fast-forward.” 
+
+• We should have different branches because Branching allows each developer to branch out from the original code base and isolate their work from others. It also helps Git to easily merge versions later on.
+ 
+• In a project, we can have as many remotes repositories as we want, but we can only have one remote named "origin". The remote called "origin" is not special in any way, except that it is the default remote created by Git when we clone an existing repository.
